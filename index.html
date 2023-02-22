@@ -11,7 +11,11 @@
 <body>
 
 <div id="app">
-    <h1>{{ toDoList }}</h1>
+    <ul>
+        <li v-for="item in toDoList">
+            {{ item.item }} {{ item.quantity }}
+        </li>
+    </ul>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

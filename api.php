@@ -16,7 +16,7 @@ $response = [
 
 $jsonToDoListResponse = json_encode($response, true);
 
- header('content-type: application/json');
+ header('Content-Type: application/json');
 
  print_r($jsonToDoListResponse) ;
 

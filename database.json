@@ -1,11 +1,16 @@
 [
     {
-        "item1": "latte"
+        "item": "latte",
+        "quantity": 5
     },
     {
-        "item2": "uova"
+        "item": "uova",
+        "quantity": 8
+
     },
     {
-        "item3": "pasta"
+        "item": "pasta",
+        "quantity": 3
+
     }
 ]
