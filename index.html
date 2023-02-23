@@ -13,6 +13,26 @@
 <body>
 
 <div id="app">
+    
+
+    <div>
+        
+        <form action="" method="post" @submit.prevent="addTask()">
+            <div>
+                <h1>
+                    task: {{ newTask.taskName }}
+                </h1>
+
+                <label for="taskName">
+                </label>
+                <input type="text" v-model="newTask.taskName" name="taskName" id="taskName" placeholder="inserisci nuova task" required>
+            </div>
+            <button type="submit">
+                invia
+            </button>
+        </form>
+    </div>
+
     <ul>
         <li v-for="singleItem in toDoList">
             <span :class="{
@@ -20,7 +40,6 @@
             }">
             {{ singleItem.taskName }} {{ singleItem.done }}
             </span>
-            
         </li>
     </ul>
 </div>

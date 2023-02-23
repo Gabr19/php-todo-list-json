@@ -1,23 +1,19 @@
 <?php
 $toDoList = file_get_contents('database.json');
 
-$phptoDoList = json_decode($toDoList, true);
+$toDoListDecoded = json_decode($toDoList, true);
 
-$response = [
+$toDoListDecoded = [
     'success' => true,
     'message' => 'ok',
     'code' => 200,
-    'toDoList' => $phptoDoList
+    'toDoList' => $toDoListDecoded
 ];
 
-
-
-
-
-$jsonToDoListResponse = json_encode($response, true);
+$toDoListEncoded = json_encode($toDoListDecoded, true);
 
  header('Content-Type: application/json');
 
- print_r($jsonToDoListResponse) ;
+ print_r($toDoListEncoded) ;
 
 ?>
