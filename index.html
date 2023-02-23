@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php-todo-list</title>
 
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
@@ -13,7 +15,12 @@
 <div id="app">
     <ul>
         <li v-for="singleItem in toDoList">
+            <span :class="{
+                done: singleItem.done == true
+            }">
             {{ singleItem.taskName }} {{ singleItem.done }}
+            </span>
+            
         </li>
     </ul>
 </div>
