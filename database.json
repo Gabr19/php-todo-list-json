@@ -1,16 +1,26 @@
 [
     {
-        "item": "latte",
-        "quantity": 5
+        "taskName": "HTML",
+        "done": true
     },
     {
-        "item": "uova",
-        "quantity": 8
-
+        "taskName": "CSS",
+        "done": true
     },
     {
-        "item": "pasta",
-        "quantity": 3
-
+        "taskName": "Responsive Design",
+        "done": true
+    },
+    {
+        "taskName": "Javascript",
+        "done": true
+    },
+    {
+        "taskName": "PHP",
+        "done": true
+    },
+    {
+        "taskName": "Laravel",
+        "done": false
     }
 ]

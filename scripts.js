@@ -11,7 +11,7 @@ createApp({
     },
     created() {
         axios
-            .get('http://localhost/php-todo-list-json/api.php')
+            .get('./api.php')
             .then((response) => {
                 console.log(response);
                 this.toDoList = response.data.toDoList;
